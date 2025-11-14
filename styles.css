@@ -1,0 +1,126 @@
+body {
+    background-color: #fce4ec; /* Rosa Pastel más suave */
+    font-family: 'Lora', serif; /* Fuente base para el cuerpo */
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Estilos para el Encabezado Principal */
+.header h1 {
+    font-family: 'Playfair Display', serif; /* Fuente elegante para el título */
+    color: #a82484; /* Tu color morado/rosa */
+    font-size: 3em;
+    margin-bottom: 30px;
+    opacity: 0; /* Para la animación */
+    animation: fadeInDown 1s ease-out forwards;
+}
+
+/* Estilos de Contenedor General (.Cuadro) */
+.Cuadro {
+    width: 90%;
+    max-width: 600px; /* Limita el ancho en pantallas grandes */
+    margin: 20px auto;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #f8bbd0; /* Borde rosa suave */
+    border-radius: 20px; /* Bordes redondeados más suaves */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Sombra elegante */
+    transition: box-shadow 0.3s ease; /* Transición para el hover */
+}
+
+.Cuadro:hover {
+    box-shadow: 0 15px 30px rgba(168, 36, 132, 0.3); /* Efecto de brillo al pasar el ratón */
+}
+
+/* Estilos de Títulos y Texto de la Carta */
+.Cuadro h2, .Cuadro h3 {
+    font-family: 'Playfair Display', serif;
+    color: #a82484;
+    margin-top: 0;
+}
+
+.texto-carta p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #444; /* Color de texto suave */
+}
+
+.firma {
+    font-style: italic;
+    margin-top: 20px;
+    color: #a82484;
+    font-weight: bold;
+}
+
+/* Estilos para la sección de Razones */
+.razones-section {
+    background-color: #fffde7; /* Fondo ligeramente diferente para destacar */
+}
+
+.lista-razones {
+    list-style: none; /* Quita los puntos de la lista */
+    padding: 0;
+    text-align: left; /* Alinea los ítems a la izquierda */
+}
+
+.lista-razones li {
+    padding: 10px 0;
+    border-bottom: 1px dashed #f06292; /* Línea de separación sutil */
+    transition: transform 0.2s;
+}
+
+.lista-razones li:last-child {
+    border-bottom: none;
+}
+
+.lista-razones li:hover {
+    color: #a82484;
+    transform: translateX(5px); /* Pequeño desplazamiento al pasar el ratón */
+}
+
+/* Animación de entrada para la carta */
+.carta-animada {
+    opacity: 0;
+    transform: scale(0.9);
+    animation: popIn 1s ease-out 0.5s forwards; /* 0.5s de retraso */
+}
+
+/* Keyframes CSS (las reglas de la animación) */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes popIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.te-hice{
+    background-color: white;
+    border: 1px solid #f8bbd0; /* Borde rosa suave */
+    border-radius: 20px; /* Bordes redondeados más suaves */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Sombra elegante */
+    transition: box-shadow 0.3s ease; /* Transición para el hover */
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 600px;
+
+}
+
+.te-hice:hover{
+     box-shadow: 0 15px 30px rgba(168, 36, 132, 0.3); /* Efecto de brillo al pasar el ratón */
+}
